@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
         let_long = strs[0]
-        for s in strs:
+        for s in strs[1:]:
             while not s.startswith(let_long):
                 let_long = let_long[:-1]
 
